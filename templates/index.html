@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block header %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/login-css.css">
+    <link rel="stylesheet" href="../static/index-css.css">
+{% endblock %}
+
+{% block body %}
+ <div class="row">
+     <div class="col-md-2">
+         <div class="TV">
+             <div class="screen">
+                 <img src="static/pics/pic3.jpg" alt="">
+                 <img src="static/pics/pic7.jpg" alt="">
+                 <img src="static/pics/pic8.jpg" alt="">
+                 <img src="static/pics/pic9.jpg" alt="">
+                 <img src="static/pics/pic10.jpg" alt="">
+             </div>
+         </div>
+             <div class="panel panel-primary" id="notice">
+  <div class="panel-body">
+      <img src="static/easterbunny.svg" class="bunny" alt="">
+      <span class="welcome">Welcome to my blog!</span>
+  </div>
+  <ul class="panel-footer">
+      <li>Name: Zhiruo Wang</li>
+      <li>Gender: Female</li>
+      <li>Age: 22</li>
+      <li>Nationality: China</li>
+      <li>Interests: Music, Movies, Photography...</li>
+  </ul>
+        <div class="slogan-box"> <span class="slogan">Just click the posts and explore more about me!</span></div>
+</div>
+     </div>
+
+     <div class="col-md-10">
+         <ul class="post-ul">
+             {% for post in posts %}
+             <li class="each-post">
+                 <div class="side">
+                     <img class="side-icon" alt="" src="{{ url_for('static',filename='world of hearts 2.svg') }}">
+                 </div>
+                 <div class="post-main">
+                     <div class="post-title"><a class="title-word" title="" href="{{ url_for('qa.qa_detail', ep_id=post.id) }}">{{ post.title }}</a></div>
+                     <div class="post-content"><a class="content-word" title="" href="#">{{ post.content }}</a></div>
+                     <div class="post-detail">
+                         <span class="post-author">{{ post.author.username }}</span>
+                         <span class="post-time">{{ post.create_time }}</span>
+                     </div>
+                 </div>
+             </li>
+             {% endfor %}
+         </ul>
+     </div>
+ </div>
+
+</div>
+{% endblock %}

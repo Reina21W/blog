@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+.blog-img{
+    display: inline-block;
+    width: 30px;
+    margin-left: 20px;
+}
+.left-section{
+    width: 180px;
+    display:flex;
+    align-items: center;
+}
+.left-text{
+    display: inline-block;
+    font-family: Roboto, Arial, serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.middle-section{
+    flex: 1;
+    margin-right: 45px;
+    margin-left: 30px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.index{
+    display: flex;
+    margin-right: 20px;
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: Roboto,Arial;
+    font-weight: 600;
+}
+.post{
+    margin-top: 5px;
+    display: flex;
+    margin-right: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto,Arial;
+    font-weight: 600;
+}
+
+.search-bar{
+    flex:1;
+    height: 35px;
+    padding-left: 3px;
+    /*padding-top: 1px;*/
+    font-size: 15px;
+    border-width: 1px;
+    border-color: rgb(223, 217, 217);
+    border-style: solid;
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05) ;
+}
+
+.search-bar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 13px;
+}
+
+#search-button{
+    width: 30px;
+    height: 33px;
+    background-color: white;
+    border-width: 1px;
+    border-color: rgb(223, 217, 217);
+    border-style: solid;
+    border-radius: 3px;
+    margin-left: -1px;
+    margin-top: 1px;
+    padding-bottom: 1px;
+}
+
+.search-icon{
+    height: 20px;
+    padding-top: 4px;
+}
+
+
+
+.right-section{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.login{
+    list-style: none;
+    color: white;
+}
+
+.register{
+     list-style: none;
+     color: white;
+}
+
+.login-text{
+    color: white;
+    font-size: 15px;
+    font-family: Roboto,Arial;
+    font-weight: 600;
+}
+
+.register-text{
+    color: white;
+    font-size: 15px;
+    font-family: Roboto,Arial;
+    font-weight: 600;
+}

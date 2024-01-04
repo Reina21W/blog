@@ -1,0 +1,81 @@
+#mainpart{
+    margin-top: 25px;
+}
+
+.title-part{
+    margin: 10px;
+}
+.detail-title{
+    text-align: center;
+
+}
+.separator {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 1100px;
+    margin-left: 25px;
+}
+.detail-content{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.post-content{
+    font-size: 20px;
+    white-space: pre-line;
+    font-family: Roboto,Arial;
+}
+
+blockquote{
+    margin-bottom: 10px;
+    padding:0;
+}
+.comment{
+    margin-left: 25px;
+    position: relative;
+    margin-right: 25px;
+}
+#summit{
+    position: absolute;
+    /*bottom: 0;*/
+    right: 0;
+    margin-top: 10px;
+}
+
+.comment-content{
+     margin-left: 25px;
+     display: block;
+    margin-top: 60px;
+    position: relative;
+}
+
+.userid{
+    font-family: "Helvetica", "Arial", sans-serif;;
+    font-size: 20px;
+    display: inline-block;
+    color: rgba(146,130,145,0.6);
+}
+.cc{
+    margin-top: 5px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.com-content{
+    font-size: 15px;
+    display: inline-block;
+}
+
+.user-img{
+    width: 40px;
+    height: 50px;
+    display: inline-block;
+}
+.creat-time{
+    position: absolute;
+    right: 25px;
+    top: 9px;
+}
+#delete{
+    display: inline-block;
+    right: 25px;
+    position: absolute;
+}

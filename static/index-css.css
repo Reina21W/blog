@@ -1,0 +1,183 @@
+a {
+    text-decoration: none;
+}
+.side{
+    display: inline-block;
+}
+
+.col-md-2 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 0;
+    box-shadow: 5px 5px 10px #7d7d7d;
+}
+
+.col-md-2 .TV {
+    width: 100%;
+}
+
+.col-md-2 .TV .screen {
+    display: flex;
+    animation: imageAnimation 20s linear infinite;
+}
+
+.col-md-2 .TV .screen img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes imageAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    90% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.post-ul{
+    list-style-type:none;
+    padding: 5px;
+    margin: 0;
+}
+
+.col-md-10{
+    padding-left: 5px;
+
+}
+
+.side-icon{
+    width: 50px;
+    height: 85px;
+    display: inline-block;
+}
+.post-main{
+    display: inline-block;
+    margin-left: 7px;
+
+}
+
+.post-title{
+    display: inline-block;
+    padding-top: 10px;
+
+}
+.title-word{
+    font-family:Roboto,Arial ;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.title-word:hover{
+    color: brown;
+}
+.post-content{
+    display: block;
+    max-height: 150px;
+    max-width: 900px;
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    text-overflow: ellipsis; /* 使用省略号表示被隐藏的文本 */
+
+}
+
+.content-word{
+     color: #7d7d7d;
+     text-decoration: none;
+     font-size: 19px;
+}
+.content-word:hover{
+    text-decoration: none;
+
+}
+
+li{
+    position: relative;
+}
+
+.post-detail{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     padding: 10px;
+     display: block;
+}
+
+.post-author{
+    padding-right: 9px;
+}
+
+.each-post{
+    margin-top: 15px;
+    background:linear-gradient(.20turn, rgb(12, 12, 19) 30%, rgba(218, 208, 208, 0.67),rgb(157,157,239))
+}
+
+#notice{
+    width: 210px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.panel-body{
+    padding: 0;
+}
+
+.bunny{
+    width: 40px;
+}
+
+.welcome{
+    font-family: Roboto,Arial;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+
+.panel-footer li{
+    font-family: Roboto,Arial;
+    font-weight: 520;
+    font-size: 15px;
+}
+.slogan{
+    font-family: Roboto,Arial;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+.slogan-box{
+    padding-left: 15px;
+    background-color: black;
+}
+
+.panel-body{
+    background-color: black;
+}

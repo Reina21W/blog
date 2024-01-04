@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/header.css">
+    {% block header %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+    <!---header-->
+    <div class="header">
+        <div class="left-section">
+            <img class="blog-img" alt="" src="{{ url_for('static', filename='cloud.svg') }}">
+           <a href="" class="left-text">Blog</a>
+        </div>
+
+        <div class="middle-section">
+
+            <a class="index" href="{{ url_for('qa.index') }}"> <span class="glyphicon glyphicon-home" style="margin-right: 2px"></span>Index</a>
+            <a class="post" href="{{ url_for('qa.add_post') }}"> <span class="glyphicon glyphicon-send" style="margin-right: 2px"></span>Post</a>
+            <form method="get" action="{{ url_for('qa.search') }}">
+                <input class="search-bar" type="search" placeholder="Search.." name="q">
+                <button  class="glyphicon glyphicon-search" id="search-button" type="submit"></button>
+            </form>
+
+
+        </div>
+
+        <ul class="right-section">
+
+            {% if user %}
+                <li class="login"> <span>{{ user.username }}</span> </li>
+                <li class="register"> <a href="{{ url_for('auth.logout') }}">Exit</a></li>
+            {% else %}
+                <li class="login"><span class="glyphicon glyphicon-globe"><a class="login-text" href="{{ url_for('auth.login') }}">Login</a></span></li>
+                <li class="register"><span class="glyphicon glyphicon-tree-deciduous"><a  class="register-text" href="{{ url_for('auth.register') }}">Register</a></span></li>
+            {% endif %}
+
+        </ul>
+    </div>
+
+    <!---body-->
+    <div class="container-fluid">
+        {% block body %}{% endblock %}
+    </div>
+
+</body>
+</html>
