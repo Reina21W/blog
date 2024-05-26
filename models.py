@@ -1,7 +1,10 @@
 from exts import db
 from datetime import datetime
-from flask_login import UserMixin, LoginManager
+from flask_sqlalchemy import SQLAlchemy
+import sqlite3
 
+
+DATABASE = 'copy.db'
 
 class UserModel(db.Model):
     __tablename__ = "user"
@@ -19,7 +22,6 @@ class PostModel(db.Model):
     content = db.Column(db.Text, nullable=False)
     create_time = db.Column(db.DateTime, default=datetime.now)
 
-    #外键
     author_id = db.Column(db.Integer, db.ForeignKey("user.id"))
     author = db.relationship(UserModel, backref="posts")
 

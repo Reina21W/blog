@@ -13,7 +13,6 @@ def index():
     posts = PostModel.query.order_by(PostModel.create_time.desc()).all()
     return render_template("index.html", posts=posts)
 
-
 @bp.route("qa/post", methods=['GET', 'POST'])
 @login_required
 def add_post():

@@ -59,6 +59,7 @@
     font-size: 15px;
     font-family: Roboto,Arial;
     font-weight: 600;
+
 }
 
 .search-bar{
@@ -72,6 +73,7 @@
     border-style: solid;
     border-radius: 3px;
     box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05) ;
+
 }
 
 .search-bar::placeholder{
@@ -81,19 +83,20 @@
 
 #search-button{
     width: 30px;
-    height: 33px;
+    height: 35px;
     background-color: white;
     border-width: 1px;
     border-color: rgb(223, 217, 217);
     border-style: solid;
     border-radius: 3px;
-    margin-left: -1px;
+    margin-left: -2px;
     margin-top: 1px;
     padding-bottom: 1px;
+
 }
 
 .search-icon{
-    height: 20px;
+    height: 25px;
     padding-top: 4px;
 }
 

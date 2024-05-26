@@ -4,14 +4,11 @@ from exts import db
 from models import UserModel
 from blueprints.qa import bp as qa_bp
 from blueprints.auth import bp as auth_bp
+from config import DevelopmentConfig
 from flask_migrate import Migrate
 
-
 app = Flask(__name__)
-
-app.config.from_object(config)
-
-
+app.config.from_object(DevelopmentConfig)
 db.init_app(app)
 
 migrate = Migrate(app, db)
@@ -41,4 +38,4 @@ def my_context_processor():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

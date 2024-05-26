@@ -138,6 +138,7 @@ li{
 }
 
 .each-post{
+    border-radius: 5px;
     margin-top: 15px;
     background:linear-gradient(.20turn, rgb(12, 12, 19) 30%, rgba(218, 208, 208, 0.67),rgb(157,157,239))
 }
